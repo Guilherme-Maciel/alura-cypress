@@ -6,6 +6,18 @@ describe('Login e registro de usuarios alura pic', () => {
 
      })
 
+    it('fazer login de usuário inválido', ()=>{
+        cy.login('jacqueline', '1234')
+        cy.on('window:alert',(str)=>{
+            expect(str).to.equal('Invalid user name or password')
+        })
+    })
+
+    it('fazer login de usuário inválido', ()=>{
+        cy.login('flavio', '123')
+        cy.contains('a', '(Logout)').should('be.visible')
+    })
+
     it('verifica mensagens validacao', () => {
         //Clicar no Register Now
         //Usar Contain para identificar elemento com texto = especificado 
