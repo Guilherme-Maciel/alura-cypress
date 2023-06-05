@@ -1,0 +1,20 @@
+[
+    {
+        "email": "joão@gmail.com",
+        "fullName": "João Oliveira",
+        "userName": "João",
+        "password": "123"
+    },
+    {
+        "email": "pedro@gmail.com",
+        "fullName": "Pedro Oliveira",
+        "userName": "Pedro",
+        "password": "123"
+    },
+    {
+        "email": "caio@gmail.com",
+        "fullName": "Caio Oliveira",
+        "userName": "Caio",
+        "password": "123"
+    }
+]
